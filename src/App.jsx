@@ -9,9 +9,8 @@ function App() {
 
   return (
     <>
-      <h1 class="text-3xl font-bold text-red-500 underline text-center align-center my-10s">
-        tum pagal go
-        
+      <h1 class="text-3xl font-bold text-red-500 underline text-center my-10">
+yahoo
       </h1>
 
     </>
