@@ -10,8 +10,7 @@ function App() {
   return (
     <>
       <h1 class="text-3xl font-bold text-red-500 underline text-center align-center my-10s">
-      tm hijray ho
-      </h1>
+ni ni nin ni ni ni       </h1>
 
     </>
   )
