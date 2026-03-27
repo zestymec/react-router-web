@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <h1 class="text-3xl font-bold text-red-500 underline text-center align-center my-10 ">
+      <h1 class="text-3xl font-bold text-red-500 underline text-center align-center my-10s">
         hi arslan simosay khila do aloo walay
       </h1>
 
