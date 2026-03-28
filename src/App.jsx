@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import Header from './components/header'
 
 
 import './App.css'
@@ -9,6 +9,7 @@ function App() {
 
   return (
     <>
+    <Header />
       <h1 class="text-3xl font-bold text-red-500 underline text-center my-10">
         yahoo
       </h1>
