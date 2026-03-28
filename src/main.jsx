@@ -4,19 +4,20 @@ import './index.css'
 import Header from './components/header.jsx'
 import { BrowserRouter, RouterProvider } from 'react-router-dom'
 import About from './components/About.jsx'
+import Home from './components/Home.jsx'
 
 const router = BrowserRouter([
   {
-    path : "/" ,
-    element : <layout />,
-    children : [
+    path: "/",
+    element: <layout />,
+    children: [
       {
-        path : "" ,
-element: <Home />
+        path: "",
+        element: <Home />
 
       },
       {
-        path:"",
+        path: "about",
         element: <About />
       }
     ]
@@ -24,7 +25,7 @@ element: <Home />
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <RouterProvider router={router}/>
+    <RouterProvider router={router} />
 
   </StrictMode>,
 )
