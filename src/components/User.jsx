@@ -3,7 +3,7 @@ import {useParams} from 'react-router-dom'
 function User() {
     const {userid} = useParams() 
   return (
-    <div>
+    <div className='text-center bg-amber-800 text-5xl text-amber-200'>
       User: {userid}
     </div>
   )
