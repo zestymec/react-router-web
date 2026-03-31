@@ -38,7 +38,7 @@ function Github() {
           <input
             type="text"
             placeholder="Type GitHub username..."
-            className="w-full px-4 py-3 bg-[#161b22] border border-[#30363d] rounded-lg focus:border-[#58a6ff] outline-none text-[#c9d1d9] transition-all"
+            className="w-full px-4 py-3 bg-[#ecf1f8] border border-[#30363d] rounded-lg focus:border-[#ff5858] outline-none text-[#0b0c0c] transition-all"
             value={githubUser}
             onChange={(e) => setGithubUser(e.target.value)}
             onKeyDown={handleKeyDown}
