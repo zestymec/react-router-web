@@ -8,7 +8,7 @@ function Github() {
   const handleSearch = () => {
     if (!githubUser.trim()) return;
     
-    setError(false); // Reset error
+    setError(false); 
     fetch(`https://api.github.com/users/${githubUser}`)
       .then((res) => {
         if (!res.ok) throw new Error("Not Found");
@@ -24,7 +24,6 @@ function Github() {
       });
   };
 
-  // Enter key press handler
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
       handleSearch();
@@ -33,14 +32,13 @@ function Github() {
 
   return (
     <div className="min-h-screen bg-[#e9eaec] text-white p-8 font-sans">
-      {/* Search Section */}
       <div className="max-w-md mx-auto mb-10">
-        <h2 className="text-2xl font-bold text-center mb-6 text-[#c9d1d9]">GitHub Profile Finder</h2>
+        <h2 className="text-2xl font-bold text-center mb-6 text-[#161b22]">GitHub Profile Finder</h2>
         <div className="flex flex-col gap-4">
           <input
             type="text"
             placeholder="Type GitHub username..."
-            className="w-full px-4 py-3 bg-[#161b22] border border-[#30363d] rounded-lg focus:border-[#58a6ff] outline-none text-[#c9d1d9] transition-all"
+            className="w-full px-4 py-3 bg-[#d9dbdd] border border-[#30363d] rounded-lg focus:border-[#58a6ff] outline-none text-[#17181a] transition-all"
             value={githubUser}
             onChange={(e) => setGithubUser(e.target.value)}
             onKeyDown={handleKeyDown}
@@ -54,14 +52,12 @@ function Github() {
         </div>
       </div>
 
-      {/* Error Message */}
       {error && (
         <div className="max-w-md mx-auto p-4 bg-red-900/30 border border-red-500 rounded-lg text-center text-red-400">
           ⚠️ User not found. Please check the spelling.
         </div>
       )}
 
-      {/* Profile Card UI */}
       {data && (
         <div className="max-w-2xl mx-auto bg-[#161b22] border border-[#30363d] rounded-2xl p-8 shadow-2xl overflow-hidden animate-fadeIn">
           <div className="flex flex-col md:flex-row items-center gap-8">
