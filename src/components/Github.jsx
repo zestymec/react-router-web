@@ -38,14 +38,14 @@ function Github() {
           <input
             type="text"
             placeholder="Type GitHub username..."
-            className="w-full px-4 py-3 bg-[#ecf1f8] border border-[#30363d] rounded-lg focus:border-[#ff5858] outline-none text-[#0b0c0c] transition-all"
+            className="w-full px-4 py-3 bg-[#2c75db] border border-[#9ca4ad] rounded-lg focus:border-[#ff5858] outline-none text-[#0b0c0c] transition-all"
             value={githubUser}
             onChange={(e) => setGithubUser(e.target.value)}
             onKeyDown={handleKeyDown}
           />
           <button 
             onClick={handleSearch} 
-            className="w-full py-2.5 bg-[#238636] hover:bg-[#2ea043] text-white font-bold rounded-lg transition-all active:scale-95"
+            className="w-full py-2.5 bg-[#15cc3a] hover:bg-[#2ea043] text-white font-bold rounded-lg transition-all active:scale-95"
           >
             Search Profile
           </button>
