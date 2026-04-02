@@ -4,13 +4,13 @@ import './index.css'
 
 
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
-import Layout from './layout.jsx' 
+import Layout from './layout.jsx'
 import About from './components/About.jsx'
 import Home from './components/Home.jsx'
 import Contact from './components/Contactus.jsx'
 import User from './components/User.jsx'
 import Github from './components/Github.jsx'
-
+import github from './components/githubloader.jsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -41,14 +41,8 @@ const router = createBrowserRouter(
     <Route path='About' element={<About/>}/>
     <Route path='Contact' element={<Contact/>}/>
     <Route path='User/:userid' element={<User/>}/>
-    <Route 
-    loader={()=>{
-      
-    }}
-    path='Github' element={<Github/>}/>
-
-
-    </Route>
+    <Route path='Github' element={<Github/>}/>    
+    <Route path='Githubloader' element={<Githubloader/>}/> </Route> 
   )
 )
 
