@@ -38,7 +38,7 @@ function Github() {
           <input
             type="text"
             placeholder="Type GitHub username..."
-            className="w-full px-4 py-3 bg-[#2c75db] border border-[#9ca4ad] rounded-lg focus:border-[#ff5858] outline-none text-[#0b0c0c] transition-all"
+            className="w-full px-4 py-3 bg-[#dce1e7] border border-[#9ca4ad] rounded-lg focus:border-[#ff5858] outline-none text-[#0b0c0c] transition-all"
             value={githubUser}
             onChange={(e) => setGithubUser(e.target.value)}
             onKeyDown={handleKeyDown}
@@ -101,3 +101,8 @@ function Github() {
 }
 
 export default Github;
+
+const githubinfoloader = async ()=> {
+ const response = await fetch(`https://api.github.com/users/${githubUser}`)
+ return response.json()
+}
