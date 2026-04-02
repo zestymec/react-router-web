@@ -101,8 +101,3 @@ function Github() {
 }
 
 export default Github;
-
-const githubinfoloader = async ()=> {
- const response = await fetch(`https://api.github.com/users/${githubUser}`)
- return response.json()
-}
